@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+    <link rel="stylesheet" href="./css/_bootswatch.scss">
+    <link rel="stylesheet" href="./css/_variables.scss">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/c5f115c30e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Kiosko Uteq</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://kioskouteq.azurewebsites.net/alumnoCalificaciones.html">Calificaciones
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="https://kioskouteq.azurewebsites.net/alumnoCitas.html">Citas
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://kioskouteq.azurewebsites.net/alumnoCitasAgendadas.html">Citas agendadas</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Cerrar sesión</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    <h1 style="margin-left: 2.5vw; margin-top: 2vh;">Citas</h1>
+
+    <p style="margin-left: 2.5vw; margin-top: 2vh;">Pulsa el botón de calendario para agendar una cita con un profesor</p>
+
+    <table class="table table-hover" style="width: 95vw; margin: auto; margin-top: 5vh;">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">Profesor</th>
+            <th scope="col">Materia</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+       <tbody>
+        <tr>
+            <th scope="row">Delgadillo Espinoza Sanchez</th>
+            <td>Bases de datos distribuidas</td>
+            <td><button type="button" class="btn btn-outline-info">Agendar cita</button></td>
+        </tr>        
+        </tbody>
+      </table>
+      <div class="container">
+        <h2>Modal Example</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modals" data-target="#modals">Open Modal</button>
+      
+        <div class="modal" id="modals">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</body>
+</html>
